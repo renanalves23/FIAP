@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/cbc2496ca1.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+    <!-- navbar que aparece somente antes do MD -->
+<nav class="navbar d-none d-block d-sm-none fixed-top ">
+
+  <div class="row justify-content-between" style="position: relative;">
+    
+    <div class="col-xs-4 offset-4 welcome text-nowrap">
+    <span class="navbar-text my-light-text text-nowrap">Welcome,@name</span>
+    </div>
+    <div class="col-xs-4 text-nowrap">
+    <a class="navbar-brand my-light-text" href="#"><img class="crown" src="../../assets/images/crown (1).png" alt="premium plans"></a>  
+    </div>
+  </div>
+  <div class="zindex-dropdown " style="position: absolute; top: 10px;">
+  
+    <button  class="btn zindex-dropdown dropdown-toggle btn-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown-menu relative" aria-labelledby="dropdownMenuButton">
+        <div class="itemsFoto ">
+          <div class="row">
+            <div class="col">
+              <div class="borderRadius50">
+                <a href="#"><img class="fotoPerfil borderRadius50" src="../../assets/images/foto-perfil.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col">@NOME</div>
+          </div>
+        </div>
+        <div class="items vh100">
+          <div class="text-center vh100 lineHeight-40">
+          <a class="dropdown-item" href="#"><span>Peso</span> </a>
+          <a class="dropdown-item" href="#">Sono</a>
+          <a class="dropdown-item" href="#">Objetivos</a>
+          <a class="dropdown-item" href="#">Atividades</a>
+          <a class="dropdown-item" href="#">Diário</a>
+          <div class="footer text-center absolute bottomDropdown  w100">
+            <div><img src="../../assets/images/HearthHome.svg" alt=""></div> 
+            <div class="inline">
+              <div class="relative">
+                <a class="dropdown-item lineHeight-40" href="#"><span>Premium</span>  <img class="crown absolute right5" src="/assets/images/crown (1).png" alt="premium plans"></a>
+                <div class="">
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div> 
+      </div>
+      
+      
+      </div>
+      <i class="fa fa-bars" style="color: #C52E2E; font-size:24px"></i>
+    </button>
+  </div>
+</nav>
+  <!-- navbar que aparece somente antes do MD END -->
+
+    <!-- start navbar que aparece somente a partir do MD -->
+    <nav class="navbar d-none d-sm-block d-md-block">
+      <div class="row justify-content-between">
+        <a class="navbar-brand" href="../../pages/dashboard/index.html">
+          <img class="logo ml-3" src="../../assets/images/pngflow.com.png" alt="">
+        </a>
+          <a href="#" style="padding-left: 20px;" class="navbar-brand">
+            <img class="logo" src="../.../assets/images/pngflow.com.png" alt="">
+          </a>
+          <div class="alignRight">
+            <a class="nav-item nav-link  my-light-text" href="../../pages/login/index.html">Log Out</a>
+          </div>
+            <a class="nav-item nav-link" href="../profile/">
+                <img class="logo borderRadius50Small" src="../../assets/images/foto-perfil.png" alt="">
+            </a>
+      </div>
+    </nav>
+   <div class="container">
+     <div class="row">
+       <div class="col">
+        <div id="hist-imc-container" style="padding: 0;">
+          <ul id="imc-list">
+
+          </ul>
+      </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="container">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col" class="text-center">Resultados IMC</th>
+        </tr>
+      </thead>
+      <tbody id="tableRow">
+      </tbody>
+    </table>
+    <div class="row">
+      <div class="col text-center">
+        <a href="../imcPage/index.html"><button class="buttonStyle bgPink">Voltar</button></a>
+      </div>
+    </div>
+   </div>
+
+   <script>
+     var imcArray = [25.5, 20.8, 32.0]
+
+     $(document).ready(function(){
+       $(imcArray).each(function(key, value){
+        var list = ""
+        list +="<tr>"+
+          "<th class='pl-5'>"+
+            value+
+            "</th>"+
+            "<td>"+
+          "<span class='fa'>"+"&#xf040;"+"</span>"+
+            "</td>"+
+            "<td>"+
+          "<span class='fa'>"+"&#xf00d;"+"</span>"+
+            "</td>"+
+          "</tr>";
+        console.log(value);
+        
+        $("#tableRow").append(list);
+       })
+    //     var list = "";
+    //     for(i=0; i<imcArray.length; i++){
+        // list +="<li>"+imcArray[i]+"</li>";
+    //     }
+    // $("#imc-list").append(list);
+
+});
+   </script>
+</body>
+</html>

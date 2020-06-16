@@ -1,0 +1,71 @@
+body{
+  background-color: rgb(17, 16, 16);
+  color: rgb(0, 0, 0);
+  font-family: 'Nixie One', cursive;
+}
+
+.containerHeight{
+  height: 100vh;
+}
+
+.height50{
+  margin-top: 20%;
+}
+
+.bgTransp{
+  background: transparent;
+}
+
+.colorWhite{
+  font-weight: bold;
+  color: rgb(132, 60, 60);
+}
+
+.bgDark{
+  color: rgb(255, 255, 255);
+
+  background-color: rgba(22, 21, 18, 0.135);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+label{
+  color: #fff;
+  letter-spacing: 5px;
+}
+.form-control{
+  background-color: #201414;
+  border: 3px solid white;
+  color: #fff;
+}
+.borderCol{
+  border: 2px solid #fff;
+}
+
+.button{
+  background: rgb(30, 29, 29);
+  color: rgb(206, 202, 202);
+  font-weight: bold;
+  width: 200px;
+  letter-spacing: 5px;
+  border: 0;  
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgb(255, 245, 245);
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255, 245, 245);
+
+}
+
+::placeholder {
+  color: rgb(255, 245, 245);
+  letter-spacing: 5px;
+}

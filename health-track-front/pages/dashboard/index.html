@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/cbc2496ca1.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <!-- navbar que aparece somente antes do MD -->
+<nav class="navbar d-none d-block d-sm-none fixed-top ">
+
+  <div class="row justify-content-between" style="position: relative;">
+    
+    <div class="col-xs-4 offset-4 welcome text-nowrap">
+    <span class="navbar-text my-light-text text-nowrap">Welcome,@name</span>
+    </div>
+    <div class="col-xs-4 text-nowrap">
+    <a class="navbar-brand my-light-text" href="#"><img class="crown" src="../../assets/images/crown (1).png" alt="premium plans"></a>  
+    </div>
+  </div>
+  <div class="zindex-dropdown " style="position: absolute; top: 10px;">
+  
+    <button  class="btn zindex-dropdown dropdown-toggle btn-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown-menu relative" aria-labelledby="dropdownMenuButton">
+        <div class="itemsFoto ">
+          <div class="row">
+            <div class="col">
+              <div class="borderRadius50">
+                <a href="../profile/index.html"><img class="fotoPerfil borderRadius50" src="../../assets/images/foto-perfil.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col">@NAME</div>
+          </div>
+        </div>
+        <div class="items vh100">
+          <div class="text-center vh100 lineHeight-40">
+          <a class="dropdown-item" href="#"><span>Peso</span> </a>
+          <a class="dropdown-item" href="#">Sono</a>
+          <a class="dropdown-item" href="#">Objetivos</a>
+          <a class="dropdown-item" href="#">Atividades</a>
+          <a class="dropdown-item" href="#">Diário</a>
+          <div class="footer text-center absolute bottomDropdown  w100">
+            <div><img src="../../assets/images/HearthHome.svg" alt=""></div> 
+            <div class="inline">
+              <div class="relative">
+                <a class="dropdown-item lineHeight-40" href="#"><span>Premium</span>  <img class="crown absolute right5" src="/assets/images/crown (1).png" alt="premium plans"></a>
+                <div class="">
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div> 
+      </div>
+      
+      
+      </div>
+      <i class="fa fa-bars" style="color: #C52E2E; font-size:24px"></i>
+    </button>
+  </div>
+</nav>
+  <!-- navbar que aparece somente antes do MD END -->
+
+    <!-- START --  container que aparece somente antes do MD -->
+    <div class="mt-5 index-1 d-none d-block d-sm-none bgPink text-center">
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Peso</h3>
+        </div>
+      </div>
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Objetivos</h3>
+        </div>
+      </div>
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Alimentação</h3>
+        </div>
+      </div>
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Atividades Físicas</h3>
+        </div>
+      </div>
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Cálculo de IMC</h3>
+        </div>
+        </div>
+      <div class="row border-black border-bottom bgPink">
+        <div class="col">
+         <h3 class="lineHeight-2">Acompanhamento</h3>
+        </div>
+        </div>
+        </div>  
+    <!-- container que aparece somente antes do MD -- END -->
+
+
+  <!-- start navbar que aparece somente a partir do MD -->
+  <nav class="navbar d-none d-sm-block d-md-block">
+    <div class="row justify-content-between">
+        <a href="index.html" style="padding-left: 20px;" class="navbar-brand">
+          <img class="logo" src="../../assets/images/pngflow.com.png" alt="">
+        </a>
+        <div class="alignRight">
+          <a class="nav-item nav-link  my-light-text" href="../../pages/login/index.html">Log Out</a>
+        </div>
+          <a class="nav-item nav-link my-light-text" href="../../pages/profile/index.html"">
+              <img class="logo borderRadius50Small" src="../../assets/images/foto-perfil.png" alt="">
+          </a>
+    </div>
+  </nav>
+  <!-- navbar que aparece somente a partir do MD end-->
+
+
+   <!--start container a partir do md -->
+
+  <div class="container rounded d-none d-sm-block bgDarkTransp">
+    <div class="content mgTop10">
+
+      <div class="row text-center d-xs-none p-3">
+        <div class="col-md-4 p-3">
+          <a href="">
+            <button class="btn buttonSize bgDark">
+            <span class="bold">
+              Peso
+            </span>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-4  p-3">
+          <a href="../../pages/imcPage/index.html">
+            <button class="btn buttonSize bgDark">
+              <span class="bold">
+                Cálculo de IMC
+                
+              </span>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-4  p-3">
+          <a href="">
+            <button class="btn buttonSize bgDark">
+              <span class="bold">
+
+                Atividades Físicas
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="row text-center  d-xs-none p-3">
+        <div class="col-md-4  p-3">
+          <a href="">
+            <button class="btn buttonSize bgDark">
+              <span class="bold">
+                Objetivos
+
+              </span>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-4  p-3">
+          <a href="">
+            <button class="btn buttonSize bgDark">
+              <span class="bold"> 
+                  Diário
+              </span>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-4 p-3">
+          <a href="">
+            <button class="btn buttonSize bgDark">
+            <span class="bold">
+              Sono
+            </span>  
+            
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- container a partir do md end-->
+
+</body>
+</html>
